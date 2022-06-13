@@ -1,0 +1,412 @@
+[INFO ] 10:57:24.669 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 27092 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 10:57:24.671 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 10:57:24.850 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 10:57:24.850 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 10:57:25.660 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 10:57:25.667 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 10:57:25.668 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:57:25.668 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 10:57:25.750 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:57:25.751 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 900 ms
+[WARN ] 10:57:25.864 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberController' defined in file [D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main\com\caramel\restapi\member\MemberController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberService' defined in file [D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main\com\caramel\restapi\member\MemberService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'memberRepository': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webSecurityConfig': Unsatisfied dependency expressed through field 'memberService'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'memberService': Requested bean is currently in creation: Is there an unresolvable circular reference?
+[INFO ] 10:57:25.866 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[ERROR] 10:57:25.901 o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   memberController defined in file [D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main\com\caramel\restapi\member\MemberController.class]
+┌─────┐
+|  memberService defined in file [D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main\com\caramel\restapi\member\MemberService.class]
+↑     ↓
+|  memberRepository (field private org.springframework.security.crypto.password.PasswordEncoder com.caramel.restapi.member.repository.MemberRepository.passwordEncoder)
+↑     ↓
+|  webSecurityConfig (field private com.caramel.restapi.member.MemberService com.caramel.restapi.member.login.config.WebSecurityConfig.memberService)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+[INFO ] 10:57:49.742 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6284 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 10:57:49.743 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 10:57:49.897 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 10:57:49.897 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 10:57:50.581 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 10:57:50.588 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 10:57:50.588 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:57:50.588 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 10:57:50.662 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:57:50.663 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 765 ms
+[WARN ] 10:57:50.805 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ef14930c-15f3-4cb7-a401-78be2994dfc0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[WARN ] 10:57:50.854 o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO ] 10:57:50.854 o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/resources/**']
+[INFO ] 10:57:50.866 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2fde1508, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@316973d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@6a24b5c3, org.springframework.security.web.header.HeaderWriterFilter@6a6cf2a5, org.springframework.security.web.authentication.logout.LogoutFilter@22c1a643, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26902091, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50846f9e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48ed1d2e, org.springframework.security.web.session.SessionManagementFilter@132b2d8d, org.springframework.security.web.access.ExceptionTranslationFilter@1c7d33fc]
+[INFO ] 10:57:51.107 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 10:57:51.118 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 10:57:51.165 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 10:57:51.181 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 1.751 seconds (JVM running for 2.33)
+[INFO ] 10:58:09.359 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 10:58:09.359 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 10:58:09.359 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 10:58:09.408 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[ERROR] 10:58:12.515 com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:address=(host=192.168.56.1)(port=3306)(type=primary). Connection refused: connect
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:136)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:103)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:64)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:83)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:27)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at com.caramel.restapi.member.repository.MemberRepository.findList(MemberRepository.java:37)
+	at com.caramel.restapi.member.repository.MemberRepository$$FastClassBySpringCGLIB$$2a5c89d0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.caramel.restapi.member.repository.MemberRepository$$EnhancerBySpringCGLIB$$eba6ca12.findList(<generated>)
+	at com.caramel.restapi.member.MemberService.getMbrList(MemberService.java:24)
+	at com.caramel.restapi.member.MemberController.mbrList(MemberController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:130)
+	... 117 common frames omitted
+[ERROR] 10:58:12.523 o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:address=(host=192.168.56.1)(port=3306)(type=primary). Connection refused: connect] with root cause
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.mariadb.jdbc.client.impl.ConnectionHelper.connectSocket(ConnectionHelper.java:130)
+	at org.mariadb.jdbc.client.impl.StandardClient.<init>(StandardClient.java:103)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:64)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:83)
+	at org.mariadb.jdbc.Driver.connect(Driver.java:27)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at com.caramel.restapi.member.repository.MemberRepository.findList(MemberRepository.java:37)
+	at com.caramel.restapi.member.repository.MemberRepository$$FastClassBySpringCGLIB$$2a5c89d0.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.caramel.restapi.member.repository.MemberRepository$$EnhancerBySpringCGLIB$$eba6ca12.findList(<generated>)
+	at com.caramel.restapi.member.MemberService.getMbrList(MemberService.java:24)
+	at com.caramel.restapi.member.MemberController.mbrList(MemberController.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:327)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[INFO ] 10:59:31.947 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 10:59:31.986 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[WARN ] 10:59:42.847 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+[WARN ] 11:00:23.302 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'mbrId' for method parameter type String is not present]
+[WARN ] 11:01:19.508 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'mbrId' for method parameter type String is not present]
+[INFO ] 11:05:34.784 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 11:05:34.789 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 11:05:34.900 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6284 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:05:34.900 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:05:35.057 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:05:35.058 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:05:35.058 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:05:35.058 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:05:35.065 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:05:35.065 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 164 ms
+[WARN ] 11:05:35.104 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 764048ea-06ae-43e3-9a07-83b53e6f3f92
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[WARN ] 11:05:35.105 o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO ] 11:05:35.105 o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/resources/**']
+[INFO ] 11:05:35.108 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39fcb10d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e4eaaf7, org.springframework.security.web.context.SecurityContextPersistenceFilter@8f97470, org.springframework.security.web.header.HeaderWriterFilter@447f4418, org.springframework.security.web.authentication.logout.LogoutFilter@7ee7ecc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24ec760d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a8da90c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1507f5a, org.springframework.security.web.session.SessionManagementFilter@6548538f, org.springframework.security.web.access.ExceptionTranslationFilter@53efeac8]
+[INFO ] 11:05:35.154 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:05:35.158 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:05:35.160 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:05:35.166 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.286 seconds (JVM running for 466.315)
+[INFO ] 11:05:35.167 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:05:38.907 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:05:38.907 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:05:38.908 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 11:05:39.084 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 11:05:39.087 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[WARN ] 11:09:04.061 o.m.jdbc.message.server.ErrorPacket - Error: 1048-23000: Column 'mbr_nm' cannot be null
+[ERROR] 11:09:04.154 c.c.restapi.member.MemberController - org.springframework.dao.DataIntegrityViolationException: PreparedStatementCallback; SQL [
+		INSERT INTO tb_diary_mbr (mbr_id, mbr_pwd, mbr_nm, mbr_tel_no, mbr_mphon_no)
+		VALUES (?, ?, ?, ?, ?)
+	]; (conn=19) Column 'mbr_nm' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: (conn=19) Column 'mbr_nm' cannot be null
+[INFO ] 11:18:47.855 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 11:18:47.858 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 11:18:47.980 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6284 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:18:47.980 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:18:48.134 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:18:48.134 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:18:48.134 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:18:48.135 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:18:48.141 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:18:48.142 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 161 ms
+[WARN ] 11:18:48.178 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fbae1040-b1c8-4cc1-b6b2-eeda0d9b07c0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[WARN ] 11:18:48.179 o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO ] 11:18:48.179 o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/resources/**']
+[INFO ] 11:18:48.181 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@64d61d4f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@659089cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a6782dd, org.springframework.security.web.header.HeaderWriterFilter@148adab9, org.springframework.security.web.authentication.logout.LogoutFilter@4de0a42c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28603fe0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6afd6747, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@13c64bf8, org.springframework.security.web.session.SessionManagementFilter@4f4a7f6, org.springframework.security.web.access.ExceptionTranslationFilter@4c6bcfce]
+[INFO ] 11:18:48.226 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:18:48.230 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:18:48.232 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:18:48.238 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.278 seconds (JVM running for 1259.387)
+[INFO ] 11:18:48.239 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:19:01.915 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6284 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:19:01.915 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:19:02.034 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:19:02.035 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:19:02.035 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:19:02.035 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:19:02.047 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:19:02.047 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 131 ms
+[WARN ] 11:19:02.081 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 49e5caf9-8378-4b22-bcf6-90652a088fd8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[WARN ] 11:19:02.082 o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Ant [pattern='/resources/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+[INFO ] 11:19:02.082 o.s.s.web.DefaultSecurityFilterChain - Will not secure Ant [pattern='/resources/**']
+[INFO ] 11:19:02.084 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b325b55, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@248df48a, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bdcf29f, org.springframework.security.web.header.HeaderWriterFilter@38737ba4, org.springframework.security.web.authentication.logout.LogoutFilter@6843dfbf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20ac63c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3218223, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c1f7320, org.springframework.security.web.session.SessionManagementFilter@254a2bf, org.springframework.security.web.access.ExceptionTranslationFilter@20056fd2]
+[INFO ] 11:19:02.124 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:19:02.127 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:19:02.129 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:19:02.134 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.237 seconds (JVM running for 1273.283)
+[INFO ] 11:19:02.135 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:20:15.333 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:20:15.334 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:20:15.335 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 11:20:15.341 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 11:20:15.354 com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.

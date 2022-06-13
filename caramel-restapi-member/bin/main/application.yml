@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    url: jdbc:mariadb://192.168.56.1:3306/caramel-sample?serverTimeZone=UTC&CharacterEncoding=UTF-8
+    driver-class-name: org.mariadb.jdbc.Driver
+    password: root
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 5000
+      connection-init-sql: SELECT 1
+      validation-timeout: 2000
+      minimum-idle: 10
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+server:
+  port: 8642

@@ -1,0 +1,170 @@
+[INFO ] 10:22:18.345 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6140 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 10:22:18.347 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 10:22:18.497 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 10:22:18.497 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 10:22:19.248 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 10:22:19.256 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 10:22:19.256 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 10:22:19.256 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 10:22:19.330 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 10:22:19.330 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 833 ms
+[WARN ] 10:22:19.483 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 7b8ffa21-5d9d-47bf-a1ab-a6f6fa363db4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 10:22:19.534 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e0a7f97, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f60e1bc, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c67ab1f, org.springframework.security.web.header.HeaderWriterFilter@71e5bbce, org.springframework.security.web.authentication.logout.LogoutFilter@5a0922b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1e03a7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44a46561, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70b08068, org.springframework.security.web.session.SessionManagementFilter@68c6c9dc, org.springframework.security.web.access.ExceptionTranslationFilter@3f8c027b]
+[INFO ] 10:22:19.743 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 10:22:19.753 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 10:22:19.765 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 10:22:19.782 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 1.755 seconds (JVM running for 2.41)
+[INFO ] 10:22:31.748 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 10:22:31.748 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 10:22:31.749 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 10:22:31.781 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 10:22:31.864 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 11:04:25.844 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 11:04:25.849 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 11:04:25.973 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 6140 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:04:25.973 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:04:26.138 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:04:26.138 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:26.138 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:04:26.138 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:04:26.146 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:04:26.146 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 172 ms
+[WARN ] 11:04:26.186 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e3f6b352-a7dd-4452-a550-2a7f72193148
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 11:04:26.189 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1e03057a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e9d0fbb, org.springframework.security.web.context.SecurityContextPersistenceFilter@664cb989, org.springframework.security.web.header.HeaderWriterFilter@32f451b3, org.springframework.security.web.csrf.CsrfFilter@1094f54d, org.springframework.security.web.authentication.logout.LogoutFilter@23707b69, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a2cec59, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ac55766, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4626f581, org.springframework.security.web.session.SessionManagementFilter@5fdf43d, org.springframework.security.web.access.ExceptionTranslationFilter@3b70f58c]
+[INFO ] 11:04:26.236 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:04:26.240 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:26.242 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:04:26.248 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.297 seconds (JVM running for 2528.876)
+[INFO ] 11:04:26.249 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:04:29.474 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:04:29.474 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:04:29.475 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 11:04:34.567 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 11:04:34.571 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 11:04:47.270 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 8584 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:04:47.271 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:04:47.421 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 11:04:47.421 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 11:04:48.106 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:04:48.112 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:48.112 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:04:48.113 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:04:48.188 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:04:48.189 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 767 ms
+[WARN ] 11:04:48.336 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: df360e3c-1aa1-44f4-8c2b-55e85e1541e4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 11:04:48.388 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@653c6218, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e3c0e8b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1810c5a, org.springframework.security.web.header.HeaderWriterFilter@5169a25, org.springframework.security.web.csrf.CsrfFilter@4e588c3f, org.springframework.security.web.authentication.logout.LogoutFilter@6c1d3fda, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7db85cce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fd90450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50846f9e, org.springframework.security.web.session.SessionManagementFilter@603c3e43, org.springframework.security.web.access.ExceptionTranslationFilter@45235cea]
+[WARN ] 11:04:48.599 o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+[INFO ] 11:04:48.609 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[WARN ] 11:04:48.612 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8642 is already in use
+[INFO ] 11:04:48.615 o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:48.616 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[INFO ] 11:04:48.618 o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:48.618 o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8642"]
+[ERROR] 11:04:48.647 o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8642 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8642 or configure this application to listen on another port.
+
+[INFO ] 11:04:53.083 o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+[INFO ] 11:04:53.256 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 11:04:53.261 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 11:04:58.314 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 26396 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:04:58.315 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:04:58.468 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 11:04:58.468 o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[INFO ] 11:04:59.163 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:04:59.171 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:59.171 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:04:59.171 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:04:59.244 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:04:59.244 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 776 ms
+[WARN ] 11:04:59.384 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4fe58184-d2bb-4dfe-96b1-8c905da4835a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 11:04:59.435 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26cf9650, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@439a3325, org.springframework.security.web.context.SecurityContextPersistenceFilter@7581af05, org.springframework.security.web.header.HeaderWriterFilter@36f59749, org.springframework.security.web.csrf.CsrfFilter@288b0555, org.springframework.security.web.authentication.logout.LogoutFilter@64902370, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cde2ef6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36a6e65e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32d9c5bb, org.springframework.security.web.session.SessionManagementFilter@1e67342d, org.springframework.security.web.access.ExceptionTranslationFilter@174f75fb]
+[INFO ] 11:04:59.640 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:04:59.651 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:04:59.662 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:04:59.679 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 1.684 seconds (JVM running for 2.257)
+[INFO ] 11:05:03.268 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:05:03.268 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:05:03.269 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 11:05:03.301 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 11:05:03.351 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 11:05:22.321 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 11:05:22.329 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[INFO ] 11:05:22.458 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 26396 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:05:22.458 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:05:22.595 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:05:22.595 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:05:22.595 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:05:22.595 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:05:22.604 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:05:22.604 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 144 ms
+[WARN ] 11:05:22.643 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e6537e3b-b31b-483f-888c-777d88e1a508
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 11:05:22.672 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e4e8b87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1e89f11c, org.springframework.security.web.context.SecurityContextPersistenceFilter@52d8a981, org.springframework.security.web.header.HeaderWriterFilter@66adc375, org.springframework.security.web.csrf.CsrfFilter@60a06968, org.springframework.security.web.authentication.logout.LogoutFilter@3ce1eed6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50ab20b7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@18aa4a1, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@14440753, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3856423c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b396a6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3307a016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d3e68d1, org.springframework.security.web.session.SessionManagementFilter@31506dea, org.springframework.security.web.access.ExceptionTranslationFilter@72036174, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@137e07dc]
+[INFO ] 11:05:22.719 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:05:22.724 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:05:22.725 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:05:22.732 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.3 seconds (JVM running for 25.311)
+[INFO ] 11:05:22.733 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:05:24.878 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:05:24.879 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:05:24.879 o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 11:06:29.713 c.c.r.CaramelRestapiMemberApplication - Starting CaramelRestapiMemberApplication using Java 1.8.0_201 on DESKTOP-UIL72T1 with PID 26396 (D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member\bin\main started by HUSTAR09 in D:\eGovFrameDev-4.0\eGovFrameDev-4.0.0-64bit\workspace\caramel-restapi-member)
+[INFO ] 11:06:29.713 c.c.r.CaramelRestapiMemberApplication - No active profile set, falling back to 1 default profile: "default"
+[INFO ] 11:06:29.865 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8642 (http)
+[INFO ] 11:06:29.866 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:06:29.866 o.a.catalina.core.StandardService - Starting service [Tomcat]
+[INFO ] 11:06:29.866 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+[INFO ] 11:06:29.873 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[INFO ] 11:06:29.873 o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 158 ms
+[WARN ] 11:06:29.918 o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: be9d06e8-c589-4a6e-ba8f-fe8c61418f7c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[INFO ] 11:06:29.921 o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5257393c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2a91c09f, org.springframework.security.web.context.SecurityContextPersistenceFilter@24ef72dd, org.springframework.security.web.header.HeaderWriterFilter@335d92ff, org.springframework.security.web.authentication.logout.LogoutFilter@58ee079e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c42de29, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@43d77d34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ab8c899, org.springframework.security.web.session.SessionManagementFilter@138aea34, org.springframework.security.web.access.ExceptionTranslationFilter@647b8dc4]
+[INFO ] 11:06:29.966 o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 11:06:29.970 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8642"]
+[INFO ] 11:06:29.971 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8642 (http) with context path ''
+[INFO ] 11:06:29.977 c.c.r.CaramelRestapiMemberApplication - Started CaramelRestapiMemberApplication in 0.282 seconds (JVM running for 92.555)
+[INFO ] 11:06:29.978 o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 11:06:34.271 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 11:06:34.271 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 11:06:34.272 o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 11:06:38.954 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 11:06:38.957 com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
